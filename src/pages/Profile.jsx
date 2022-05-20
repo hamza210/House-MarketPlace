@@ -126,7 +126,7 @@ function Profile() {
         {!loading && listings?.length > 0 && (
           <>
             <p className="listingText">My Listings</p>
-            <ul className="listingsList">
+            <ul className="categoryListings">
               {listings.map((listing) => (
                 <ListingItem listing={listing.data} id={listing.id} onEdit={() => onEdit(listing.id)} onDelete={() => onDelete(listing.id)} key={listing.id} />
               ))}
